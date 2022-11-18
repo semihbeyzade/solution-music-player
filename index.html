@@ -12,32 +12,35 @@
 </head>
 
 <body>
-    <main class="container">
+    <main class="container music-container play" id="music-container">
         <section class="section-header">
-            <div>
+            <button>
                 <i class="fas fa-search"></i>
-            </div>
+            </button>
             <h3>My Playlist</h3>
-            <div>
+            <button>
                 <i class="fas fa-power-off"></i>
-            </div>
+            </button>
         </section>
-
+        <audio src="./music/ukulele.mp3" id="audio"></audio>
         <section class="section-main">
-            <img src="./assets/track-image.jpeg" alt="abstract black and white image">
-            <h2>Track #2</h2>
-            <h4>Artist</h4>
-            <meter max="100" value="70">70%</meter>
+            <div class="img-container">
+                <img src="./images/nina.jpg" alt="music-cover" id="cover">
+            </div>
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
         </section>
 
         <section class="section-control">
-            <div> <i class="fas fa-backward"></i></div>
-            <div> <i class="fas fa-play"></i></div>
-            <div><i class="fas fa-forward"></i></div>
+            <button id="prev" class="action-btn"> <i class="fas fa-backward"></i></button>
+            <button id="play" class="action-btn action-btn-big"> <i class="fas fa-play"></i></button>
+            <button id="next" class="action-btn"><i class="fas fa-forward"></i></button>
         </section>
-        <hr>
     </main>
-
+   
+    <script src="./js.js"></script>
 </body>
 
 </html>
